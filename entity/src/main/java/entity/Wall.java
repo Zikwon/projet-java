@@ -8,7 +8,7 @@ import javax.imageio.ImageIO;
 
 /**
  * 
- * @author Lucas Gaillant
+ * @author Lucas Gailland
  *
  */
 
