@@ -11,10 +11,11 @@ import javax.swing.JOptionPane;
 import contract.IController;
 import contract.IModel;
 
+
 /**
  * The Class ViewFrame.
  *
- * @author Jean-Aymeric Diet
+ * @author Maxence Pigné
  */
 class ViewFrame extends JFrame implements KeyListener {
 
@@ -131,7 +132,7 @@ class ViewFrame extends JFrame implements KeyListener {
 		this.setResizable(false);
 		this.addKeyListener(this);
 		this.setContentPane(new ViewPanel(this));
-		this.setSize(400 + this.getInsets().left + this.getInsets().right, 60 + this.getInsets().top + this.getInsets().bottom);
+		this.setSize(325 + this.getInsets().left + this.getInsets().right, 349 + this.getInsets().top + this.getInsets().bottom);
 		this.setLocationRelativeTo(null);
 	}
 
@@ -161,6 +162,8 @@ class ViewFrame extends JFrame implements KeyListener {
 	 */
 	public void keyPressed(final KeyEvent e) {
 		this.getController().orderPerform(View.keyCodeToControllerOrder(e.getKeyCode()));
+		
+		
 	}
 
 	/*
