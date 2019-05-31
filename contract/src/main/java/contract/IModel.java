@@ -12,7 +12,7 @@ import entity.HelloWorld;
 public interface IModel {
 
 	/**
-	 * Gets the hello world.
+	 * Gets the hello world
 	 *
 	 * @return the helloworld entity
 	 */
