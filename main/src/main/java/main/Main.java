@@ -10,7 +10,7 @@ import model.Model;
 import view.View;
 
 /**
- * The Class Main.
+ * The Class Main.toti
  *
  * @author Jean-Aymeric Diet
  */
@@ -29,6 +29,7 @@ public abstract class Main {
         view.setController(controller);
 
         controller.control();
-        controller.orderPerform(ControllerOrder.English);
+        controller.orderPerform(ControllerOrder.map);
+        
     }
 }
