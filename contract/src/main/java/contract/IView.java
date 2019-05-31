@@ -5,7 +5,7 @@ import java.io.IOException;
 /**
  * The Interface IView.
  *
- * @author Jean-Aymeric Diet
+ * @author Maxence Pigné
  */
 public interface IView {
 
