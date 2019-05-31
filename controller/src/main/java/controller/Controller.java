@@ -1,9 +1,12 @@
 package controller;
 
+import java.io.IOException;
+
 import contract.ControllerOrder;
 import contract.IController;
 import contract.IModel;
 import contract.IView;
+import entity.Heros;
 
 /**
  * The Class Controller.
@@ -38,7 +41,7 @@ public final class Controller implements IController {
 	 * @see contract.IController#control()
 	 */
 	public void control() {
-		this.view.printMessage("Appuyer sur les touches 'E', 'F', 'D' ou 'I', pour afficher Hello world dans la langue d votre choix.");
+		this.view.printMessage("Welcome to BoulderDash");
 	}
 
 	/**
@@ -74,17 +77,87 @@ public final class Controller implements IController {
 	 */
 	public void orderPerform(final ControllerOrder controllerOrder) {
 		switch (controllerOrder) {
-			case English:
-				this.model.loadHelloWorld("GB");
+		/**To change the map we have to change "case map" 
+		 * Level 1 : "UP"
+		 * Level 2 : "DW"
+		 * Level 3 : "RI"
+		 * Level 4 : "LE"
+		 * Level 5 : "PP"
+		 */
+			case map:
+				this.model.loadHelloWorld("PP");
 				break;
-			case Francais:
-				this.model.loadHelloWorld("FR");
+			case keyup:
+				System.out.println("up");
+				
+				Heros.joueur = 2;
+				Heros.Y=Heros.Y-16;
+                
+                if (Heros.Y==0) {
+                	Heros.Y=16;
+                    }
+                this.view.displayPlayer();
+			try {
+				this.view.rockFall();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+                System.out.println("Y = " + Heros.Y);
 				break;
-			case Deutsch:
-				this.model.loadHelloWorld("DE");
+			case keydown:
+				System.out.println("down");
+				
+				Heros.joueur = 1;
+				Heros.Y=Heros.Y+16;
+                
+                if (Heros.Y==320) {
+                	Heros.Y=304;
+                    }
+                this.view.displayPlayer();
+			try {
+				this.view.rockFall();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+                System.out.println("Y = " + Heros.Y);
 				break;
-			case Indonesia:
-				this.model.loadHelloWorld("ID");
+			case keyright:
+				System.out.println("right");
+				
+				Heros.joueur = 4;
+				Heros.X=Heros.X+16;
+                
+                if (Heros.X==304) {
+                	Heros.X=288;
+                    }
+                this.view.displayPlayer();
+			try {
+				this.view.rockFall();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+                System.out.println("X = " + Heros.X);
+               	break;
+			case keyleft:
+				System.out.println("left");
+				
+				Heros.joueur = 3;
+				Heros.X=Heros.X-16;
+                
+                if (Heros.X==0) {
+                	Heros.X=16;
+                    }
+                this.view.displayPlayer();
+			try {
+				this.view.rockFall();
+			} catch (IOException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+                System.out.println("X = " + Heros.X);
 				break;
 			default:
 				break;
