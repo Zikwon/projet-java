@@ -1,6 +1,9 @@
 package view;
 
 import java.awt.event.KeyEvent;
+import java.io.IOException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 import javax.swing.SwingUtilities;
 
@@ -8,11 +11,12 @@ import contract.ControllerOrder;
 import contract.IController;
 import contract.IModel;
 import contract.IView;
+import entity.Heros;
 
 /**
  * The Class View.
  *
- * @author Jean-Aymeric Diet
+ * @author Maxence Pigné
  */
 public final class View implements IView, Runnable {
 
@@ -37,20 +41,21 @@ public final class View implements IView, Runnable {
 	 *          the key code
 	 * @return the controller order
 	 */
+	
 	protected static ControllerOrder keyCodeToControllerOrder(final int keyCode) {
 		switch (keyCode) {
-			case KeyEvent.VK_G:
-				return ControllerOrder.English;
-			case KeyEvent.VK_F:
-				return ControllerOrder.Francais;
-			case KeyEvent.VK_D:
-				return ControllerOrder.Deutsch;
-			case KeyEvent.VK_I:
-				return ControllerOrder.Indonesia;
+			case KeyEvent.VK_UP:
+				return ControllerOrder.keyup;
+			case KeyEvent.VK_DOWN:
+				return ControllerOrder.keydown;
+			case KeyEvent.VK_RIGHT:
+				return ControllerOrder.keyright;
+			case KeyEvent.VK_LEFT:
+				return ControllerOrder.keyleft;
 			default:
-				return ControllerOrder.English;
+				return null;
 		}
-	}
+	} 
 
 	/*
 	 * (non-Javadoc)
@@ -69,6 +74,7 @@ public final class View implements IView, Runnable {
 	public void run() {
 		this.viewFrame.setVisible(true);
 	}
+	
 
 	/**
 	 * Sets the controller.
@@ -79,4 +85,26 @@ public final class View implements IView, Runnable {
 	public void setController(final IController controller) {
 		this.viewFrame.setController(controller);
 	}
+
+	@Override
+	public void update() {
+		// TODO Auto-generated method stub
+		
+	}
+	
+	public void displayPlayer(){
+        try {
+            ((ViewPanel) this.viewFrame.getContentPane()).displayPlayer(this.viewFrame.getContentPane().getGraphics(), Heros.X, Heros.Y);
+        } catch (IOException ex) {
+            Logger.getLogger(View.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+
+	@Override
+	public void rockFall() throws IOException{
+		// TODO Auto-generated method stub
+		((ViewPanel) this.viewFrame.getContentPane()).rockfall(this.viewFrame.getContentPane().getGraphics());
+	}
+	
+	
 }
