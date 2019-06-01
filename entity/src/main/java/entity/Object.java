@@ -1,5 +1,9 @@
 package entity;
 
-public class Object {
-
-}
+abstract class Object {
+	
+	int x;
+	int y;
+			
+		
+	}
