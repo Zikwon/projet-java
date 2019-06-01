@@ -26,6 +26,7 @@ import entity.Wall;
  * The Class ViewPanel.
  *
  * @author Maxence Pigné
+ * 
  */
 class ViewPanel extends JPanel implements Observer {
 
