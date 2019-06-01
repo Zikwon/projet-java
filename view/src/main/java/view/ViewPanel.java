@@ -139,12 +139,12 @@ class ViewPanel extends JPanel implements Observer {
         
         
         if( map[X/16][Y/16] == 55) {	// If player hit a monster he lose
-        	viewFrame.printMessage("GAME OVER !!");
+        	viewFrame.printMessage("OUTCH You have been killed by a monster !! GAME OVER");
         	System.exit(0);
         }
         
         if( map[X/16][Y/16] == 50) {	// If player hit a rock he lose
-        	viewFrame.printMessage("GAME OVER !!");
+        	viewFrame.printMessage("OUTCH You have been crushed by a rock !! GAME OVER");
         	System.exit(0);
         
         
