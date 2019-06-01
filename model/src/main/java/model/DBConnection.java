@@ -7,7 +7,7 @@ import java.sql.SQLException;
 /**
  * The Class DBConnection.
  *
- * @author Jean-Aymeric Diet
+ * @author Maxence Pigné
  */
 final class DBConnection {
 	/** The instance. */
