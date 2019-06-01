@@ -69,7 +69,7 @@ class DAOHelloWorld extends DAOEntity<HelloWorld> {
 		HelloWorld helloWorld = new HelloWorld();
 
 		try {
-			final String sql = "{call helloworldById(?)}";
+			final String sql = "{call HelloworldById(?)}";
 			final CallableStatement call = this.getConnection().prepareCall(sql);
 			call.setInt(1, id);
 			call.execute();
@@ -94,7 +94,7 @@ class DAOHelloWorld extends DAOEntity<HelloWorld> {
 		HelloWorld helloWorld = new HelloWorld();
 
 		try {
-			final String sql = "{call helloworldByCode(?)}";
+			final String sql = "{call HelloworldByCode(?)}";
 			final CallableStatement call = this.getConnection().prepareCall(sql);
 			call.setString(1, code);
 			call.execute();
