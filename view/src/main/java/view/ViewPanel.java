@@ -76,13 +76,9 @@ class ViewPanel extends JPanel implements Observer {
     	}
     	else {
     		
-    		
-    	
-    	//ImageIO.read(new File("C:\\Users\\Vincent\\git\\Boulder_Dash_Java\\Boulder_Dash_Java\\entity\\Images\\down.png"));
-        //g.drawImage(img, X, Y, null);
         Image img2 = ImageIO.read(new File("../entity/Images/path.png"));
         
-        //if player mange le mur
+        //if player hit the wall
         
         if (map[X/16][Y/16] == 48 || map[X/16][Y/16] == 51 || map[X/16][Y/16] == 52 || map[X/16][Y/16] == 53) {	// Player can only break the dirt, grab diamond and walk on the path
         	System.out.println(X/16);
@@ -251,10 +247,8 @@ class ViewPanel extends JPanel implements Observer {
         	
             char[] splitMsg = msg.toCharArray();
            
-            //boucle pour afficher
             for (int i = 0; i < splitMsg.length; i++) {
                 map[i][y] = splitMsg[i];
-                //En fonction du nb, on affiche telle ou telle img
                 switch (splitMsg[i]) {
                 case 48:
                     try {
