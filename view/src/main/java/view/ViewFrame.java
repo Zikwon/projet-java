@@ -2,6 +2,8 @@ package view;
 
 import java.awt.GraphicsConfiguration;
 import java.awt.HeadlessException;
+import java.awt.Image;
+import java.awt.Toolkit;
 import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 
@@ -134,6 +136,8 @@ class ViewFrame extends JFrame implements KeyListener {
 		this.setContentPane(new ViewPanel(this));
 		this.setSize(325 + this.getInsets().left + this.getInsets().right, 349 + this.getInsets().top + this.getInsets().bottom);
 		this.setTitle("Boulder Dash");
+		Image appIcon = Toolkit.getDefaultToolkit().getImage("../entity/Images/icon.png");
+        this.setIconImage(appIcon);
 		this.setLocationRelativeTo(null);
 	}
 
