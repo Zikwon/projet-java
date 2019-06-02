@@ -87,6 +87,12 @@ public final class Controller implements IController {
 			case map:
 				this.model.loadHelloWorld("RI");
 				break;
+				
+				
+				/**
+				 *  To change the direction of the player
+				 */
+				
 			case keyup:
 				System.out.println("up");
 				

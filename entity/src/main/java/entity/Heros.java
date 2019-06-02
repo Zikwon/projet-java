@@ -18,6 +18,7 @@ public static BufferedImage up, down, right, left;
     public static int Y = 16;
     public static int joueur = 1;
     
+  
     public static void player() {
     	try {
     		up = ImageIO.read(new File("../entity/Images/up.png"));
@@ -28,8 +29,7 @@ public static BufferedImage up, down, right, left;
     	ex.printStackTrace();	
     	}
     }
-    
-   
+
 	   public static Image image() {
 	    	player();
       if (Heros.joueur == 1) {

@@ -68,7 +68,13 @@ class ViewPanel extends JPanel implements Observer {
     private ViewFrame getViewFrame() {
         return this.viewFrame;
     }
-
+/**
+ * DisplayPlayer
+ * @param g
+ * @param X
+ * @param Y
+ * @throws IOException
+ */
     public void displayPlayer(Graphics g, int X, int Y) throws IOException {
     	
     	if(X == 16 & Y == 16) {
@@ -149,6 +155,11 @@ class ViewPanel extends JPanel implements Observer {
     	}
         
     }
+    /**
+     *  Rockfall
+     * @param g
+     * @throws IOException
+     */
     
     public void rockfall(Graphics g) throws IOException {	
     	

@@ -9,6 +9,12 @@ public class Dirt extends Object {
 
     private Image image;
     
+    /**
+     * 
+     * @param x
+     * @param y
+     * @throws IOException
+     */
     
      public Dirt(int x, int y) throws IOException {
         this.x = x;

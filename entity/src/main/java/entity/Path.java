@@ -8,7 +8,12 @@ import javax.imageio.ImageIO;
 public class Path extends Object {
 
     private Image image;
-    
+    /**
+     * 
+     * @param x
+     * @param y
+     * @throws IOException
+     */
   
      public Path(int x, int y) throws IOException {
         this.x = x;

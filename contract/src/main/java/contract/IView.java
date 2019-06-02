@@ -18,5 +18,9 @@ public interface IView {
 	void printMessage(final String message);
 	void update();
 	public void displayPlayer();
+	/**
+	 * 
+	 * @throws IOException
+	 */
 	public void rockFall() throws IOException;
 }

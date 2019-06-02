@@ -15,11 +15,12 @@ public class Mob extends Object {
 
     private Image image;
     
-    //private final String PATH_IMAGE = ;
-
-    /*public Mob() {
-		notify.controleur();
-	}*/
+ /**
+  * 
+  * @param x
+  * @param y
+  * @throws IOException
+  */
     
      public Mob(int x, int y) throws IOException {
         this.x = x;

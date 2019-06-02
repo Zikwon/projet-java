@@ -9,11 +9,12 @@ public class Out extends Object {
 
     private Image image;
     
-    //private final String PATH_IMAGE = ;
-
-    /*public Rock() {
-		notify.controleur();
-	}*/
+    /**
+     * 
+     * @param x
+     * @param y
+     * @throws IOException
+     */
     
      public Out(int x, int y) throws IOException {
         this.x = x;

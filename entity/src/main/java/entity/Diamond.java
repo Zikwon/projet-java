@@ -9,7 +9,12 @@ public class Diamond extends Object {
 
     private Image image;
     
-    
+    /**
+     * 
+     * @param x
+     * @param y
+     * @throws IOException
+     */
      public Diamond(int x, int y) throws IOException {
         this.x = x;
         this.y = y;
