@@ -1,34 +1,42 @@
 package view;
 
-import static org.junit.Assert.*;
-
+import contract.IController;
+import contract.IModel;
+import contract.IView;
 import org.junit.After;
-import org.junit.AfterClass;
 import org.junit.Before;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
+import java.util.Observer;
+
+import static org.junit.Assert.*;
+
 public class ViewFrameTest {
+    ViewPanel viewPanel;
+    IView view;
 
-	@BeforeClass
-	public static void setUpBeforeClass() throws Exception {
-	}
+    @Before
+    public void setUp() throws Exception {
 
-	@AfterClass
-	public static void tearDownAfterClass() throws Exception {
-	}
+    }
 
-	@Before
-	public void setUp() throws Exception {
-	}
+    @After
+    public void tearDown() throws Exception {
+    }
 
-	@After
-	public void tearDown() throws Exception {
-	}
+    @Test
+    public void testgetObserver() {
+    }
 
-	@Test
-	public void test() {
-		fail("Not yet implemented");
-	}
+    @Test
+    public void testkeyPressed() {
+    }
 
+    @Test
+    public void testkeyReleased() {
+    }
+
+    @Test
+    public void keyTyped() {
+    }
 }
