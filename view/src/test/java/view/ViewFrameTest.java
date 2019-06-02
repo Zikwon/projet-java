@@ -1,15 +1,13 @@
 package view;
 
-import contract.IController;
-import contract.IModel;
+
+
 import contract.IView;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Observer;
 
-import static org.junit.Assert.*;
 
 public class ViewFrameTest {
     ViewPanel viewPanel;
