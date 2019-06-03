@@ -21,11 +21,6 @@ public class Path extends Object {
         this.image = ImageIO.read(new File("../entity/Images/path.png"));
     }
 
-    public Path(int x, int y, String pathImage) throws IOException {
-        this.x = x;
-        this.y = y;
-        this.image = ImageIO.read(new File(pathImage));
-    }
 
     public int getX() {
         return x;

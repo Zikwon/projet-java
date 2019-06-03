@@ -22,11 +22,6 @@ public class Out extends Object {
         this.image = ImageIO.read(new File("../entity/Images/Out.png"));
     }
 
-    public Out(int x, int y, String pathImage) throws IOException {
-        this.x = x;
-        this.y = y;
-        this.image = ImageIO.read(new File(pathImage));
-    }
 
     public int getX() {
         return x;

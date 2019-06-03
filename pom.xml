@@ -145,7 +145,7 @@
 	<url>-</url>
   <distributionManagement>
     <site>
-      <id>www.yourcompany.com</id>
+      <id>helloworldmaven</id>
       <url>scp://www.yourcompany.com/www/docs/project/</url>
     </site>
   </distributionManagement>
