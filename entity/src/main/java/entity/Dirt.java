@@ -22,7 +22,10 @@ public class Dirt extends Object {
         this.image = ImageIO.read(new File("../entity/Images/dirt.png"));
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
 
     public int getX() {
         return x;

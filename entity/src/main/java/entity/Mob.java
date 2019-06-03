@@ -29,6 +29,10 @@ public class Mob extends Object {
     }
 
 
+<<<<<<< HEAD
+=======
+    
+>>>>>>> master
 
     public int getX() {
         return x;
