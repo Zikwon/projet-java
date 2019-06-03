@@ -29,10 +29,6 @@ public class Wall extends Object {
         this.image = ImageIO.read(new File("../entity/Images/wall.png"));
     }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 
     public int getX() {
         return x;

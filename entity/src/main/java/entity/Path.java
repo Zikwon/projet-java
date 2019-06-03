@@ -21,10 +21,7 @@ public class Path extends Object {
         this.image = ImageIO.read(new File("../entity/Images/path.png"));
     }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> master
 
     public int getX() {
         return x;

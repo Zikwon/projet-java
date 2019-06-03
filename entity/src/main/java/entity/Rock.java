@@ -22,10 +22,7 @@ public class Rock extends Object {
         this.image = ImageIO.read(new File("../entity/Images/rock.png"));
     }
 
-<<<<<<< HEAD
 
-=======
->>>>>>> master
     public int getX() {
         return x;
     }
