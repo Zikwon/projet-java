@@ -31,6 +31,10 @@ import entity.Wall;
 class ViewPanel extends JPanel implements Observer {
 
 	
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
 	public int Xorg = 16;
     public int Yorg = 16;
     public int Score = 0;
@@ -38,19 +42,12 @@ class ViewPanel extends JPanel implements Observer {
     /**
      * The view frame.
      */
-    private ViewFrame viewFrame;
-    /**
-     * The Constant serialVersionUID.
-     */
-    private static final long serialVersionUID = -998294702363713521L;
-    
+    private ViewFrame viewFrame;    
     /**
      * Tableau map
      */
     public int[][] map = new int[20][20];
-	private Object view;
-
-    /**
+	/**
      * Instantiates a new view panel.
      *
      * @param viewFrame the view frame

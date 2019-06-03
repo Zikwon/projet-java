@@ -1,6 +1,5 @@
 package view;
 
-import java.awt.GraphicsConfiguration;
 import java.awt.HeadlessException;
 import java.awt.Image;
 import java.awt.Toolkit;
@@ -22,13 +21,16 @@ import contract.IModel;
  */
 class ViewFrame extends JFrame implements KeyListener {
 
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+
 	/** The model. */
 	private IModel						model;
 
 	/** The controller. */
 	private IController				controller;
-	/** The Constant serialVersionUID. */
-	private static final long	serialVersionUID	= -697358409737458175L;
 
 	/**
 	 * Instantiates a new view frame.

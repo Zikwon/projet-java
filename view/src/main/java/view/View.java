@@ -2,9 +2,6 @@ package view;
 
 import java.awt.event.KeyEvent;
 import java.io.IOException;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 import javax.swing.SwingUtilities;
 
 import contract.ControllerOrder;
@@ -85,7 +82,7 @@ public final class View implements IView, Runnable {
         try {
             ((ViewPanel) this.viewFrame.getContentPane()).displayPlayer(this.viewFrame.getContentPane().getGraphics(), Heros.X, Heros.Y);
         } catch (IOException ex) {
-            Logger.getLogger(View.class.getName()).log(Level.SEVERE, null, ex);
+        	
         }
     }
 
