@@ -189,7 +189,7 @@ class ViewPanel extends JPanel implements Observer {
 			    				
 			    					g.drawImage(new Rock(x * 16, y * 16).getImage(), (x+1) * 16, (y+1) * 16,null);
 			    					g.drawImage(new Path(x * 16, y * 16).getImage(), x * 16, y * 16,null);
-			    					map[x+1][y+1] = 50;// down the rock
+			    					map[x+1][y+1] = 52;// down the rock
 			    					map[x][y] = 52;//put path instead
 		
 			    					}	
@@ -306,8 +306,7 @@ class ViewPanel extends JPanel implements Observer {
                             Logger.getLogger(ViewPanel.class.getName()).log(Level.SEVERE, null, ex);
                         }
                         break;
-                    default:
-                        graphics.drawString("error", i*16, hauteur);
+
                 }
             }
             hauteur += 16;
