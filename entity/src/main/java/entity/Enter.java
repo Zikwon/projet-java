@@ -21,11 +21,6 @@ public class Enter extends Object {
         this.image = ImageIO.read(new File("../entity/Images/Enter.png"));
     }
 
-    public Enter(int x, int y, String pathImage) throws IOException {
-        this.x = x;
-        this.y = y;
-        this.image = ImageIO.read(new File(pathImage));
-    }
 
     public int getX() {
         return x;
