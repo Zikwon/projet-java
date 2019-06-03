@@ -7,7 +7,7 @@ import entity.HelloWorld;
 /**
  * The Interface IModel.
  *
- * @author Lucas Agnes
+ * @author Maxence Pigné
  */
 public interface IModel {
 

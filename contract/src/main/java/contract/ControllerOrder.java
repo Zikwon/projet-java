@@ -3,7 +3,7 @@ package contract;
 /**
  * The Enum ControllerOrder.
  *
- * @author Tristan Pasquet
+ * @author Maxence Pigné
  */
 public enum ControllerOrder {
 

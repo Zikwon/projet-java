@@ -111,9 +111,7 @@ class ViewPanel extends JPanel implements Observer {
 	        g.drawImage(img2, Xorg, Yorg, null);
 	        map[Xorg/16][Yorg/16] = 52;
 	
-	        }
-	        //System.out.println(Xorg);
-	        //System.out.println(Yorg);
+	        };
 	         Xorg = X;
 	         Yorg = Y;
 	         g.drawImage(img2, X, Y, null);
