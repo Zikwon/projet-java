@@ -104,31 +104,15 @@ class ViewFrame extends JFrame implements KeyListener {
 		JOptionPane.showMessageDialog(null, message);
 	}
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see java.awt.event.KeyListener#keyTyped(java.awt.event.KeyEvent)
-	 */
 	public void keyTyped(final KeyEvent e) {
 
 }
-
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see java.awt.event.KeyListener#keyPressed(java.awt.event.KeyEvent)
-	 */
 	public void keyPressed(final KeyEvent e) {
 		this.getController().orderPerform(View.keyCodeToControllerOrder(e.getKeyCode()));
 		
 		
 	}
 
-	/*
-	 * (non-Javadoc)
-	 *
-	 * @see java.awt.event.KeyListener#keyReleased(java.awt.event.KeyEvent)
-	 */
 	public void keyReleased(final KeyEvent e) {
 
 	}

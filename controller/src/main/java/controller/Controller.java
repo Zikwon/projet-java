@@ -85,7 +85,7 @@ public final class Controller implements IController {
 		 * Level 5 : "PP"
 		 */
 			case map:
-				this.model.loadHelloWorld("RI");
+				this.model.loadHelloWorld("DW");
 				break;
 				
 				
