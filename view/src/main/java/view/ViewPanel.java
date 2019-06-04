@@ -130,7 +130,7 @@ class ViewPanel extends JPanel implements Observer {
 	         Heros.Y = Yorg;
         }
       
-        if( map[X/16][Y/16] == 54 && Score >= 2) {	//end the game when player get 10 Diamond and is on the exit sprite
+        if( map[X/16][Y/16] == 54 && Score >= 2) {	//end the game when player get 2 Diamond and is on the exit sprite
         	viewFrame.printMessage("YOU WIN !! Total diamonds : " + Score);
         	System.exit(0);
         }
